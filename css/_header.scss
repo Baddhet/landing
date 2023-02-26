@@ -1,0 +1,19 @@
+.header {
+  color: black;
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  &__inner {
+    font-size: 20px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__inner p, a {
+    color: black;
+  }
+  &__tel {
+    color: black;
+  }
+}

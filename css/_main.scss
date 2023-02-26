@@ -1,0 +1,22 @@
+.main {
+  height: 100vh;
+  background-color: rgba($color: gray, $alpha: .3);
+  &__inner {
+    padding: 10vh 0;
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+  }
+  &__services {
+    padding: 3%;
+    height: 80%;
+    width: 40%;
+    
+    border-radius: 10px;
+    background-color: rgba($color: white, $alpha: .5)
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 5%;
+  }
+}

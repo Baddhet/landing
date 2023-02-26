@@ -3,6 +3,8 @@
   position: absolute;
   height: 10vh;
   width: 100%;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,.8) 0%, rgba(157,157,157, 0) 100%);
   &__inner {
     font-size: 20px;
     display: flex;

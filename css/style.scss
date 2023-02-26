@@ -17,7 +17,15 @@
   height: 100%;
 }
 
+h1 {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:  rgba($color: white, $alpha: .8);
+}
+
 @import "main";
 @import "header";
 @import "calc";
 @import "toggle__checkbox";
+@import "biography";

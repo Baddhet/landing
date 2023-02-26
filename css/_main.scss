@@ -9,14 +9,17 @@
   }
   &__services {
     padding: 3%;
-    height: 80%;
     width: 40%;
-    
     border-radius: 10px;
-    background-color: rgba($color: white, $alpha: .5)
+    background-color: rgba($color: white, $alpha: .8)
   }
   &__title {
     position: relative;
+    text-align: center;
     margin-bottom: 5%;
+  }
+  &__subtitle {
+    margin: 10px 0;
+    position: relative;
   }
 }

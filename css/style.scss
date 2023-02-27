@@ -1,5 +1,5 @@
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Bender";
   margin: 0;
   padding: 0;
 }
@@ -20,12 +20,11 @@
 }
 
 h1 {
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  background-color:  rgba($color: white, $alpha: .8);
+  font-weight: 400;
+  color: white;
 }
 
+@import "fonts";
 @import "main";
 @import "header";
 @import "calc";

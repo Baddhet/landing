@@ -2,6 +2,7 @@
   font-family: "Bender";
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .background {
@@ -30,3 +31,4 @@ h1 {
 @import "calc";
 @import "toggle__checkbox";
 @import "biography";
+@import "media";

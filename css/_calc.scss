@@ -1,8 +1,54 @@
 .calc {
   display: block;
   &__input {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    padding: 1%;
+    cursor: pointer;
   }
+  &__checkbox {
+    -webkit-appearance: none;
+  }
+  &__bulb {
+    height: 3vh;
+    fill: rgb(107, 107, 107);
+    position: absolute;
+    right: 1%;
+  }
+  &__checkbox:checked~.calc__bulb{
+    fill: rgb(255, 120, 0);
+  }
+}
+
+.kitchen.qwerty {
+  border-radius: 5px;
+  background-color: rgba($color: gray, $alpha: 0.2);
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  padding: 1%;
+  &__arrow {
+    height: 3vh;
+    transform: rotate(90deg);
+    transition: 0.2s linear;
+  }
+  &__kitchen {
+    display: none;
+  }
+  &__kitchen.qwerty {
+    display: block;
+  }
+}
+.dropdown:hover {
+  border-radius: 5px;
+  background-color: rgba($color: gray, $alpha: 0.2);
+}
+
+.expanded {
+  transform: rotate(270deg);
 }

@@ -1,17 +1,18 @@
 .main {
-  height: 100vh;
-  background-color: rgba($color: gray, $alpha: .3);
+  display: block;
+  //height: 100vh;
+  background-color: rgba($color: gray, $alpha: .4);
   &__inner {
-    padding: 10vh 0;
+    padding: 4% 0;
     display: flex;
     justify-content: space-between;
     height: 60%;
   }
   &__services {
     padding: 3%;
-    width: 40%;
+    width: 48%;
     border-radius: 10px;
-    background-color: rgba($color: white, $alpha: .8)
+    background-color: rgba($color: white, $alpha: .8);
   }
   &__title {
     position: relative;

@@ -1,0 +1,12 @@
+@media (max-width: 990px){
+    .container { max-width: 90vw;}
+    .main__inner { 
+      display: block;
+      height: inherit;
+    }
+    .main__services:first-child {margin-bottom: 4%;}
+    .main__services { 
+      position: relative;
+      width: 100%;
+    }
+}

@@ -4,8 +4,11 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 1%;
+    padding: 10px;
     cursor: pointer;
+  }
+  &__input:hover {
+    background-color: rgba($color: gray, $alpha: 0.2);
   }
   &__checkbox {
     -webkit-appearance: none;
@@ -14,7 +17,7 @@
     height: 3vh;
     fill: rgb(107, 107, 107);
     position: absolute;
-    right: 1%;
+    right: 10px;
   }
   &__checkbox:checked~.calc__bulb{
     fill: rgb(255, 120, 0);
@@ -23,7 +26,7 @@
 
 .kitchen.qwerty {
   border-radius: 5px;
-  background-color: rgba($color: gray, $alpha: 0.2);
+  //background-color: rgba($color: gray, $alpha: 0.2);
 }
 
 .dropdown {
@@ -31,7 +34,7 @@
   justify-content: space-between;
   width: 100%;
   cursor: pointer;
-  padding: 1%;
+  padding: 10px;
   &__arrow {
     height: 3vh;
     transform: rotate(90deg);

@@ -7,4 +7,5 @@ dropdown.addEventListener('click', () => {
   dropdownArrow.classList.toggle('expanded');
   kitchen.classList.toggle('qwerty');
   dropdownKitchen.classList.toggle('qwerty');
-})
+});
+

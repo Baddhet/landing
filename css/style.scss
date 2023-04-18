@@ -1,8 +1,13 @@
 * {
   font-family: 'Bender';
+  font-size: 21px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 .background {
@@ -22,12 +27,14 @@
 
 h1 {
   font-weight: 400;
+  font-size: 32px;
   color: white;
+  margin: 20px 0;
 }
 
 @import "fonts";
 @import "main";
 @import "header";
 @import "calc";
-@import "biography";
 @import "media";
+@import "carousel";

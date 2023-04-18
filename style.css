@@ -1,8 +1,13 @@
 * {
   font-family: 'Bender';
+  font-size: 21px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 .background {
@@ -23,7 +28,9 @@
 
 h1 {
   font-weight: 400;
+  font-size: 32px;
   color: white;
+  margin: 20px 0;
 }
 
 @font-face {
@@ -84,21 +91,32 @@ h1 {
 
 .main {
   display: block;
-  background-color: rgba(128, 128, 128, 0.4);
 }
 
 .main__inner {
-  padding: 4% 0;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
-  height: 60%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main__photo {
+  position: relative;
+  height: 100%;
+}
+
+.main__photo img {
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.main__info {
+  margin-left: 30px;
 }
 
 .main__services {
-  padding: 3%;
-  width: 48%;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 30px;
 }
 
 .main__title {
@@ -107,18 +125,10 @@ h1 {
   margin-bottom: 5%;
 }
 
-.main__subtitle {
-  line-height: 20px;
-  margin: 10px 0;
-  position: relative;
-}
-
 .header {
   color: black;
-  position: absolute;
   height: 10vh;
   width: 100%;
-  background: white;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(157, 157, 157, 0) 100%);
 }
 
@@ -147,8 +157,12 @@ h1 {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding: 10px;
   cursor: pointer;
+}
+
+.calc__input:hover {
+  background-color: rgba(128, 128, 128, 0.2);
 }
 
 .calc__checkbox {
@@ -159,7 +173,7 @@ h1 {
   height: 3vh;
   fill: #6b6b6b;
   position: absolute;
-  right: 1%;
+  right: 10px;
 }
 
 .calc__checkbox:checked ~ .calc__bulb {
@@ -168,7 +182,6 @@ h1 {
 
 .kitchen.qwerty {
   border-radius: 5px;
-  background-color: rgba(128, 128, 128, 0.2);
 }
 
 .dropdown {
@@ -176,7 +189,7 @@ h1 {
   justify-content: space-between;
   width: 100%;
   cursor: pointer;
-  padding: 1%;
+  padding: 10px;
 }
 
 .dropdown__arrow {
@@ -202,38 +215,13 @@ h1 {
   transform: rotate(270deg);
 }
 
-.biography {
-  background-color: rgba(128, 128, 128, 0.4);
-}
-
-.biography__inner {
-  padding: 10vh 0;
-  display: flex;
-  justify-content: space-between;
-  height: 80%;
-}
-
-.biography__photo img {
-  width: 37vw;
-  border-radius: 10px;
-}
-
-.biography__experience {
-  padding: 3%;
-  width: 40%;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.biography__subtitle {
-  margin: 10px 0;
-  position: relative;
-}
-
-@media (max-width: 990px) {
+@media (max-width: 1080px) {
   .container {
     max-width: 90vw;
   }
+}
+
+@media (max-width: 955px) {
   .main__inner {
     display: block;
     height: inherit;
@@ -245,4 +233,49 @@ h1 {
     position: relative;
     width: 100%;
   }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel ul > li {
+  display: inline-block;
+}
+
+.carousel ul {
+  width: 9999px;
+}
+
+.carousel button {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel svg {
+  height: 40px;
+  margin: auto auto;
+}
+
+.carousel ul > li > img {
+  display: block;
+  height: 50vh;
+  transform: translateX(100px);
 }

@@ -8,8 +8,11 @@
 }
 .carousel ul {
   width: 9999px;
+  transform: translateX(0px);
+  transition: 0.5s linear;
 }
 .carousel button {
+  z-index: 1;
   top: 0;
   bottom: 0;
   margin: auto 0;
@@ -34,6 +37,4 @@
 .carousel ul>li>img{
   display: block;
   height: 50vh;
-  
-  transform: translateX(100px);
 }

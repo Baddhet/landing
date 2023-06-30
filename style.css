@@ -213,8 +213,11 @@ h1 {
     width: 100%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .main__photo img {
+    height: 35vh !important;
+  }
+  .carousel ul > li > img {
     height: 35vh !important;
   }
 }

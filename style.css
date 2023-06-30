@@ -107,16 +107,16 @@ h1 {
 }
 
 .main__photo img {
-  height: 60vh;
+  max-width: 10rem;
   border-radius: 10px;
 }
 
 .main__info {
-  margin-left: 30px;
+  max-width: 52vw;
 }
 
 .main__services {
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .main__title {
@@ -241,8 +241,32 @@ h1 {
   overflow: hidden;
 }
 
-.carousel ul > li {
-  display: inline-block;
+.carousel button {
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0px;
+  fill: #e6e6e6;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.prev > svg {
+  rotate: 180deg;
+}
+
+.next {
+  right: 0px;
+  fill: #e6e6e6;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .carousel ul {
@@ -251,33 +275,16 @@ h1 {
   transition: 0.5s linear;
 }
 
-.carousel button {
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-.carousel svg {
-  height: 40px;
-  margin: auto auto;
+.carousel ul > li {
+  display: inline-block;
 }
 
 .carousel ul > li > img {
   display: block;
   height: 50vh;
+}
+
+.carousel svg {
+  height: 40px;
+  margin: auto auto;
 }

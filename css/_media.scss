@@ -1,9 +1,4 @@
 @media (max-width: 1080px) {
-  .container {
-    max-width: 90vw;
-  }
-}
-@media (max-width: 850px) {
   .main__inner {
     display: block;
     height: inherit;
@@ -11,6 +6,7 @@
   .main__photo {
     text-align: center;
     margin-right: 0;
+    max-height: 60vw;
   }
   .main__info {
     max-width: 100vw;
@@ -24,6 +20,9 @@
     position: relative;
     width: 100%;
   }
+}
+@media (max-width: 850px) {
+  
 }
 @media (max-width: 700px) {
   .carousel ul > li > img {

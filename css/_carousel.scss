@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .carousel button {
@@ -30,6 +31,8 @@
 }
 
 .carousel ul {
+  //display: flex;
+  //overflow-x: scroll;
   width: 9999px;
   transform: translateX(0px);
   transition: 0.5s linear;

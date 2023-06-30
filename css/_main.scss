@@ -9,11 +9,10 @@
   }
   &__photo{
     position: relative;
-    height: 60vh;
+    margin-right: 30px;
   }
   &__photo img {
-    margin-right: 30px;
-    height: 60vh;
+    max-height: 60vw;
     border-radius: 10px;
   }
   &__info {

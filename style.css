@@ -139,7 +139,7 @@ h1 {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 .calc__input:hover {
@@ -157,9 +157,11 @@ h1 {
 .calc__checkbox:checked ~ .calc__bulb {
   fill: rgb(255, 120, 0);
 }
-
-.kitchen.qwerty {
-  border-radius: 5px;
+.calc__dropdown {
+  display: none;
+}
+.calc__dropdown.qwerty {
+  display: block;
 }
 
 .dropdown {
@@ -173,12 +175,6 @@ h1 {
   height: 3vh;
   transform: rotate(90deg);
   transition: 0.2s linear;
-}
-.dropdown__kitchen {
-  display: none;
-}
-.dropdown__kitchen.qwerty {
-  display: block;
 }
 
 .dropdown:hover {
@@ -274,4 +270,26 @@ h1 {
 .carousel svg {
   height: 40px;
   margin: auto auto;
+}
+
+.footer {
+  background: rgb(210, 210, 210);
+  background: linear-gradient(0deg, rgb(210, 210, 210) 95%, rgb(255, 255, 255) 100%);
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+.footer__inner a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  height: 30px;
+}
+.footer__social {
+  padding: 5px;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */

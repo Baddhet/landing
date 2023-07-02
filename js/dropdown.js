@@ -1,11 +1,13 @@
-const dropdown = document.querySelector('.dropdown');
-const dropdownKitchen = document.querySelector('.dropdown__kitchen');
-const dropdownArrow = document.querySelector(".dropdown__arrow");
-const kitchen = document.querySelector('.kitchen');
+const dropdown = document.querySelectorAll('.dropdown');
+const calcDropdown = document.querySelectorAll('.calc__dropdown');
+const dropdownArrow = document.querySelectorAll(".dropdown__arrow");
 
-dropdown.addEventListener('click', () => {
-  dropdownArrow.classList.toggle('expanded');
-  kitchen.classList.toggle('qwerty');
-  dropdownKitchen.classList.toggle('qwerty');
-});
+for (let index = 0; index < dropdown.length; index++) {
+  const element = dropdown[index];
+  dropdown[index].addEventListener('click', () => {
+    dropdownArrow[index].classList.toggle('expanded');
+    calcDropdown[index].classList.toggle('qwerty');
+  });
+}
+
 

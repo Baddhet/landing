@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
   }
   &__input:hover {
@@ -22,11 +22,12 @@
   &__checkbox:checked~.calc__bulb{
     fill: rgb(255, 120, 0);
   }
-}
-
-.kitchen.qwerty {
-  border-radius: 5px;
-  //background-color: rgba($color: gray, $alpha: 0.2);
+  &__dropdown {
+    display: none;
+  }
+  &__dropdown.qwerty {
+    display: block;
+  }
 }
 
 .dropdown {
@@ -39,12 +40,6 @@
     height: 3vh;
     transform: rotate(90deg);
     transition: 0.2s linear;
-  }
-  &__kitchen {
-    display: none;
-  }
-  &__kitchen.qwerty {
-    display: block;
   }
 }
 .dropdown:hover {

@@ -292,4 +292,14 @@ h1 {
 .footer__social {
   padding: 5px;
   height: 40px;
+}
+
+.myworks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.myworks img {
+  height: 40vh;
 }/*# sourceMappingURL=style.css.map */

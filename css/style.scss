@@ -40,3 +40,13 @@ h1 {
 @import "media";
 @import "carousel";
 @import "footer";
+
+.myworks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.myworks img {
+  height: 40vh;
+}
